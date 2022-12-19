@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <title>Rating component</title>
+   </head>
+   <body>
+      <div id="main">
+         <div id="container">
+            <div id="star">
+               <img src="./images/icon-star.svg" alt="star-image" />
+            </div>
+            <h2>How did we do?</h2>
+            <p>
+               Please let us know how we did with your support request. All
+               feedback is appreciated to help us improve our offering!
+            </p>
+            <div id="buttons">
+               <button onclick="selectedRating(1)">1</button>
+               <button onclick="selectedRating(2)">2</button>
+               <button onclick="selectedRating(3)">3</button>
+               <button onclick="selectedRating(4)">4</button>
+               <button onclick="selectedRating(5)">5</button>
+            </div>
+            <button id="submit-button" onclick="submit()">SUBMIT</button>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
